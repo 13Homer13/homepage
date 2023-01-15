@@ -1,0 +1,3 @@
+[submodule "flappyBitcoin"]
+	path = flappyBitcoin
+	url = https://github.com/13Homer13/flappyBitcoin
