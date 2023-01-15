@@ -18,7 +18,7 @@ body {
  
 .title {
     
-    padding: 50px 20px 0;
+    padding: 40px 20px 0;
     margin-left: 13%;
     width: 450px;
     height: 100vh;
@@ -31,10 +31,13 @@ body {
     font-size: 2.5rem;
 }
 .title p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     letter-spacing: 3px;
     font-weight: 400;
+}
+.title form {
+    margin-top: 30px;
 }
 #homer {
    margin-top: 3%;
@@ -67,7 +70,7 @@ body {
 
 .container {
     box-sizing: border-box;
-    padding-top: 100px;
+    padding-top: 20vh;
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -77,12 +80,13 @@ body {
     
 }
 .box {
+  
     background-color: rgba(0, 0, 0, 0.6);
     width: 20vw;
     height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     border-radius: 10px;
     position: absolute;
@@ -111,6 +115,7 @@ body {
 }
 #aboutme p {
     font-size: 01rem;
+    margin-bottom: 15px;
 }
 #contact:hover {
    transform: scale(1.3);
@@ -169,7 +174,7 @@ body {
     body {
         height: 100vh;
         position: fixed;
-        
+        background-size: auto;
     }
     .title {
         padding: 10px 10px;
@@ -203,7 +208,7 @@ body {
         align-items: center;
         gap: 20px;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.4);
         position: absolute;
         top: 0;
         right: -100%;
@@ -237,10 +242,16 @@ body {
     body {
         background: url("./assets/pic/portait.jpeg") no-repeat;
         position: fixed;
-        height: 100vh;
+        
     }
     .title {
-        display: none;
+        padding: 10px 20px;
+       margin-left: 0;
+        margin-top: 30%;
+        width: 95%;
+    }
+    .title p {
+        font-size: 1.3rem;
     }
     .hamburger{
         display: block;
@@ -268,18 +279,18 @@ body {
     }
    
     .container {
-        padding-top: 50px;
+        padding: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        top: 0;
         right: -100%;
         transition: 1s;
         overflow: scroll;
-        z-index: 9;
         box-shadow: none;
     }
     .container.active {

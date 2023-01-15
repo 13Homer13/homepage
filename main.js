@@ -7,8 +7,6 @@ const container = document.querySelector(".container")
 let audio = new Audio("./assets/audio/babel.mp3");
 audio.loop = true;
 
-
-
 window.addEventListener("scroll", () => {
    
     backgroundEl.style.backgroundSize = 120 + window.scrollY*0.2 +"%";
@@ -28,12 +26,17 @@ window.addEventListener("scroll", () => {
 
 })
 
-
-
-
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     container.classList.toggle("active");
+    if (audio.paused) {
+        audio.currentTime = 0;
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    
 })
+
 
 
