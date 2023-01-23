@@ -6,10 +6,9 @@ const hamburger = document.querySelector(".hamburger");
 const container = document.querySelector(".container")
 let audio = new Audio("./assets/audio/babel.mp3");
 audio.loop = true;
-
 window.addEventListener("scroll", () => {
    
-    backgroundEl.style.backgroundSize = 120 + window.scrollY*0.2 +"%";
+    backgroundEl.style.backgroundSize = 100 + window.scrollY*0.05 +"%";
     
    if (window.scrollY > 210)  {
     audio.play();
