@@ -18,7 +18,23 @@ body {
     
 
 }
- 
+nav {
+   position: fixed;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+a:hover {
+    scale: 1.3;
+    transition: 0.5s;
+}
 .title {
     position: relative;
     padding: 40px 20px 0;
@@ -67,12 +83,12 @@ body {
     box-shadow: 0 6px 10px rgba(0,0,0,0.19), 0 6px 10px rgba(0,0,0,0.23);
   }
 #homer {
-   margin-top: 4%;
-   margin-left: 4%;
-    position: absolute;
+   margin-top: 13%;
+   margin-left: 13%;
+    
     border-radius: 50%;
     border: 2px white solid;
-    max-height: 110px;   
+    max-height: 50px;   
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 #homer:hover {
@@ -145,8 +161,6 @@ body {
 #aboutme p {
     font-size: 01rem;
     margin-bottom: 15px;
-    line-height: 1.9;
-    letter-spacing: 2px;
 }
 #contact:hover {
     scale: 1.1;
@@ -202,9 +216,8 @@ body {
 }
 footer {
     text-align: center;
-    margin: 30px 30px;
+    margin-bottom: 30px;
     font-size: larger;
-    color: white;
 }
 
 
@@ -214,6 +227,10 @@ footer {
         background-position: center;
         
     }
+    nav {
+        position: static;
+        justify-content: center;
+    }
     .title {
         padding: 30px 30px;
         margin: 0 auto;
@@ -222,11 +239,6 @@ footer {
         margin: 0;
     }
     
-    #homer {
-        scale: 0.5;
-        position: absolute;
-        margin: 0 auto;
-    }
     .hamburger{
         display: block;
         cursor: pointer;
@@ -289,11 +301,15 @@ footer {
          
      }
 }
-@media (orientation: portrait) and (max-width:780px){
+@media (orientation: portrait) and (max-width:680px){
     body {
         
         background-size: 150%;
         
+    }
+    nav {
+        position: static;
+        justify-content: center;
     }
     #homer {
         scale: 0.5;
@@ -361,8 +377,7 @@ footer {
         position: static;
         min-height: 400px;
         width: 90%;
-        backdrop-filter: blur(6px);
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.9);
     }
     #aboutme:hover {
         transform: none;
